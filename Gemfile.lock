@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    tjstyle (0.9.2)
+    tjstyle (0.9.3)
       rails (~> 3.2.11)
 
 GEM
