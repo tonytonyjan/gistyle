@@ -1,10 +1,16 @@
 # GIStyle
 
-GIStyle is a Rails plug-in for DOM-based routing of Javascript, inspired from [Paul Irish and Jason Garber](http://paulirish.com/2009/markup-based-unobtrusive-comprehensive-dom-ready-execution/).
+GIStyle (Garber-Irish Style) is a Rails plug-in for DOM-based routing of Javascript, inspired from [Paul Irish](http://paulirish.com/2009/markup-based-unobtrusive-comprehensive-dom-ready-execution/) and [Jason Garber](http://viget.com/inspire/extending-paul-irishs-comprehensive-dom-ready-execution).
 
 ## Usage
 
 ### Install
+
+`Gemfile`
+
+    ...
+    gem 'gistyle'
+    ...
 
 `app/assets/javascripts/application.js`
 
@@ -15,7 +21,7 @@ GIStyle is a Rails plug-in for DOM-based routing of Javascript, inspired from [P
     //= require_tree .
 
     APP.init = function() {
-      console.log("application");
+      console.log("application"); // global
     };
     ...
 
@@ -28,6 +34,8 @@ Be sure to place `require gistyle` before `require_tree .`.
     ...
 
 ### Example
+
+#### JavaScript
 
 `app/assets/javascripts/home.js`
 
@@ -46,6 +54,8 @@ Be sure to place `require gistyle` before `require_tree .`.
         console.log("home#contact");
       }
     }
+
+#### CoffeeScript
 
 `app/assets/javascripts/posts.js.coffee`
 
