@@ -12,7 +12,7 @@
 //
 //= require jquery
 //= require jquery_ujs
-//= require tjstyle
+//= require gistyle
 //= require_tree .
 APP.init = function() {
   console.log("application");

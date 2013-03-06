@@ -1,4 +1,4 @@
-module Tjstyle
+module Gistyle
   module Rails
     class Engine < ::Rails::Engine
     end

@@ -1,4 +1,4 @@
 # desc "Explaining what the task does"
-# task :tjstyle do
+# task :gistyle do
 #   # Task goes here
 # end

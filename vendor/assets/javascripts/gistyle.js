@@ -2,7 +2,7 @@
 
 APP = {};
  
-TJStyle = {
+GIStyle = {
   exec: function( controller, action ) {
     var ns = APP, action = ( action === undefined ) ? "init" : action;
  
@@ -17,9 +17,9 @@ TJStyle = {
         action = body.getAttribute("data-action");
  
     if(typeof APP.init == "function") APP.init();
-    TJStyle.exec(controller);
-    TJStyle.exec(controller, action);
+    GIStyle.exec(controller);
+    GIStyle.exec(controller, action);
   }
 };
 
-$(document).ready(TJStyle.init);
+$(document).ready(GIStyle.init);

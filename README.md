@@ -1,6 +1,6 @@
-# TJStyle
+# GIStyle
 
-TJStyle is a Rails plug-in for DOM-based routing of Javascript, inspired from [Paul Irish and Jason Garber](http://paulirish.com/2009/markup-based-unobtrusive-comprehensive-dom-ready-execution/).
+GIStyle is a Rails plug-in for DOM-based routing of Javascript, inspired from [Paul Irish and Jason Garber](http://paulirish.com/2009/markup-based-unobtrusive-comprehensive-dom-ready-execution/).
 
 ## Usage
 
@@ -11,7 +11,7 @@ TJStyle is a Rails plug-in for DOM-based routing of Javascript, inspired from [P
     ...
     //= require jquery
     //= require jquery_ujs
-    //= require tjstyle
+    //= require gistyle
     //= require_tree .
 
     APP.init = function() {
@@ -19,7 +19,7 @@ TJStyle is a Rails plug-in for DOM-based routing of Javascript, inspired from [P
     };
     ...
 
-Be sure to place `require tjstyle` before `require_tree .`.
+Be sure to place `require gistyle` before `require_tree .`.
 
 `app/views/layouts/application.html.erb`
 
