@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    gistyle (0.9.4)
+    gistyle (0.9.5)
 
 GEM
   remote: http://rubygems.org/
