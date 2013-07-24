@@ -23,4 +23,3 @@ GIStyle = {
 };
 
 $(document).ready(GIStyle.init);
-$(document).on('page:load', GIStyle.init) // support Turbolinks
