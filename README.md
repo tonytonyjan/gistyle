@@ -44,8 +44,20 @@ Be sure to place `require gistyle` before `require_tree .`.
       init: function() {
         console.log("home controller wide");
       },
-      index: function(){
+      index: function() {
         console.log("home#index");
+      },
+      new: function() {
+        console.log("home#new");
+      },
+      _new_create: function() {
+        console.log("home#new or home#create)");
+      },
+      _edit_update: function() {
+        console.log("home#edit or home#update)");
+      },
+      _form: function() {
+        console.log("Action with form (by default new, create, edit and update). See aliases (below) for more info.");
       },
       about: function() {
         console.log("home#about");
@@ -73,3 +85,17 @@ Be sure to place `require gistyle` before `require_tree .`.
         this.subroutine()
       subroutine () ->
         # blablabla
+
+### Aliases
+It is possible to define aliases, i.e. actions that (also) trigger another action. This is useful to for example have an action _form that is triggered for all actions with a form (by default new, create, edit and update).
+
+Aliases are defined by calling: `GIStyle.alias(controller, action_from, action_to)`. It is also possible to define general aliases for all controllers by setting controller to `undefined`.
+
+A few general aliases are included by default:
+* `new`, `create`, `edit`, `update` => `_form`
+* `new`, `create` => `_new_create`
+* `edit`, `update` => `_new_update`
+
+Aliases can be cleared by calling either:
+* `GIStyle.clear_aliases_for_controller(controller)` or
+* `GIStyle.clear_all_aliases()`.
