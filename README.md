@@ -30,7 +30,7 @@ Be sure to place `require gistyle` before `require_tree .`.
 `app/views/layouts/application.html.erb`
 
     ...
-    <body data-controller="<%= controller_name %>" data-action="<%= action_name %>">
+    <body data-controller="<%= controller_path %>" data-action="<%= action_name %>">
     ...
 
 ### Example
@@ -69,9 +69,9 @@ Be sure to place `require gistyle` before `require_tree .`.
 
 #### CoffeeScript
 
-`app/assets/javascripts/posts.js.coffee`
+`app/assets/javascripts/admin/posts.js.coffee`
 
-    APP.posts =
+    APP['admin/posts'] = # supports namespace as wall
       index: () ->
         # blablabla
       show: () ->
