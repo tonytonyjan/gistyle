@@ -21,5 +21,4 @@ GIStyle = {
     GIStyle.exec(controller, action);
   }
 };
-
-$(document).on('ready page:change', GIStyle.init) // support Turbolinks
+$(document).on(typeof(Turbolinks) == 'undefined' ? 'ready' : 'page:change', GIStyle.init) // support Turbolinks
