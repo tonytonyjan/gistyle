@@ -64,4 +64,5 @@ GIStyle.alias(undefined, 'edit', '_edit_update');
 GIStyle.alias(undefined, 'update', '_edit_update');
 GIStyle.alias(undefined, '_edit_update', '_form');
 
-$(document).on(typeof(Turbolinks) == 'undefined' ? 'ready' : 'page:change', GIStyle.init) // support Turbolinks
+var turbolinkSupported = typeof(Turbolinks) !== "undefined" && Turbolinks !== null && Turbolinks.supported;
+$(document).on(turbolinkSupported ? 'page:change' : 'ready', GIStyle.init);
