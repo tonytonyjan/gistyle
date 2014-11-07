@@ -99,3 +99,7 @@ A few general aliases are included by default:
 Aliases can be cleared by calling either:
 * `GIStyle.clear_aliases_for_controller(controller)` or
 * `GIStyle.clear_all_aliases()`.
+
+## Turbolinks Compatibility
+
+It dosen't support turbolinks with version 1.x, please upgrade to 2.x if you want to make it work.
